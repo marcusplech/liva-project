@@ -1,36 +1,190 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liva Project 🏠
 
-## Getting Started
+Um projeto moderno de interface web desenvolvido com Next.js, TypeScript e Tailwind CSS, focado em apresentar informações sobre imóveis de forma elegante e interativa.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** - Framework React para produção
+- **TypeScript** - Tipagem estática para JavaScript
+- **Tailwind CSS** - Framework CSS utilitário
+- **React Hooks** - Gerenciamento de estado moderno
+- **ESLint** - Linting de código
+- **Prettier** - Formatação de código
+
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
+
+## 🔧 Instalação
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/marcusplech/liva-project.git
+   cd liva-project
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Execute o projeto em modo de desenvolvimento:**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Acesse a aplicação:**
+   Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 📁 Estrutura do Projeto
+
+```
+feba-project/
+├── public/                 # Arquivos estáticos
+│   ├── file.svg
+│   ├── globe.svg
+│   └── ...
+├── src/
+│   └── app/
+│       ├── components/     # Componentes React reutilizáveis
+│       │   ├── AboutSection.tsx
+│       │   ├── Button.tsx
+│       │   ├── ContactSection.tsx
+│       │   ├── Footer.tsx
+│       │   ├── Header.tsx
+│       │   ├── HeroSection.tsx
+│       │   ├── PropertyCard.tsx
+│       │   └── PropertySection.tsx
+│       ├── data/          # Dados estáticos
+│       │   └── properties.ts
+│       ├── utils/         # Utilitários e hooks
+│       │   └── useAboutSection.ts
+│       ├── globals.css    # Estilos globais
+│       ├── layout.tsx     # Layout principal
+│       └── page.tsx       # Página inicial
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Componentes Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Header**: Navegação principal com logo e menu
+- **HeroSection**: Seção de destaque com call-to-action
+- **PropertySection**: Exibição de propriedades com filtros
+- **AboutSection**: Informações sobre a empresa com filtro interativo
+- **ContactSection**: Formulário de contato
+- **Footer**: Rodapé com informações adicionais
 
-## Learn More
+### Características Técnicas
 
-To learn more about Next.js, take a look at the following resources:
+- **Componente Button Customizável**: Sistema de variantes (primary, secondary, filter)
+- **Hooks Personalizados**: `useAboutSection` para gerenciar estado da seção sobre
+- **Design Responsivo**: Interface adaptável para diferentes dispositivos
+- **Tipagem TypeScript**: Código totalmente tipado para maior segurança
+- **Filtros Interativos**: Sistema de filtros com estados visuais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Scripts Disponíveis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Desenvolvimento
+npm run dev          # Inicia servidor de desenvolvimento
 
-## Deploy on Vercel
+# Build
+npm run build        # Gera build de produção
+npm run start        # Inicia servidor de produção
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Qualidade de código
+npm run lint         # Executa ESLint
+npx prettier --write . # Formata código com Prettier
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Customizando Componentes
+
+O sistema de componentes é modular e reutilizável. Exemplo do componente Button:
+
+```typescript
+<Button 
+  variant="primary" 
+  size="lg" 
+  onClick={handleClick}
+>
+  Texto do Botão
+</Button>
+```
+
+### Modificando Estilos
+
+O projeto usa Tailwind CSS. Para customizar:
+
+1. Edite `tailwind.config.ts` para temas personalizados
+2. Modifique `src/app/globals.css` para estilos globais
+3. Use classes Tailwind diretamente nos componentes
+
+## 🚀 Deploy
+
+### Vercel (Recomendado)
+
+1. Conecte seu repositório GitHub à [Vercel](https://vercel.com)
+2. Configure as variáveis de ambiente (se necessário)
+3. Deploy automático a cada push na branch main
+
+### Build Manual
+
+```bash
+npm run build
+npm run start
+```
+
+## 🤝 Contribuindo
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Convenções de Código
+
+- Use TypeScript para tipagem
+- Siga as regras do ESLint configurado
+- Formate código com Prettier antes do commit
+- Use nomes descritivos para componentes e funções
+- Mantenha componentes pequenos e focados
+
+## 🐛 Problemas Conhecidos
+
+- Certifique-se de que todas as imagens estão na pasta `public/`
+- Verifique se as dependências estão atualizadas
+- Em caso de erro de build, limpe o cache: `rm -rf .next node_modules && npm install`
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Marcus Plech**
+- GitHub: [@marcusplech](https://github.com/marcusplech)
+- LinkedIn: [Marcus Plech](https://linkedin.com/in/marcusplech)
+
+## 🙏 Agradecimentos
+
+- Next.js team pelo excelente framework
+- Tailwind CSS pela facilidade de estilização
+- Comunidade open source pelas ferramentas utilizadas
+
+---
+
+⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
