@@ -183,4 +183,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **Marcus Plech**
 - GitHub: [@marcusplech](https://github.com/marcusplech)
-- LinkedIn: [Marcus Plech](https://linkedin.com/in/marcusplech)
+- LinkedIn: [Marcus Plech](https://www.linkedin.com/in/devmarcusplech/)
