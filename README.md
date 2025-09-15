@@ -138,21 +138,6 @@ O projeto usa Tailwind CSS. Para customizar:
 2. Modifique `src/app/globals.css` para estilos globais
 3. Use classes Tailwind diretamente nos componentes
 
-## 🚀 Deploy
-
-### Vercel (Recomendado)
-
-1. Conecte seu repositório GitHub à [Vercel](https://vercel.com)
-2. Configure as variáveis de ambiente (se necessário)
-3. Deploy automático a cada push na branch main
-
-### Build Manual
-
-```bash
-npm run build
-npm run start
-```
-
 ## 🤝 Contribuindo
 
 1. Faça um fork do projeto
