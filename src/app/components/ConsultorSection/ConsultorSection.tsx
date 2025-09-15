@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Button from "../Button";
 import { useConsultorSection } from "./useConsultorSection";
 
@@ -32,40 +33,42 @@ function ConsultorSection() {
           {/* Seção dos Consultores */}
           <div className="text-center lg:text-left">
             <p className="text-gray-300 text-sm mb-4">Consultores online</p>
-            <div className="flex justify-center lg:justify-start gap-4">
-              {/* Consultores */}
-              <div className="w-12 h-12">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="54"
-                  height="54"
-                  viewBox="0 0 54 54"
-                  fill="none"
-                >
-                  <circle cx="27" cy="27" r="27" fill="white" />
-                </svg>
+            <div className="flex justify-center lg:justify-start items-center relative">
+              {/* Primeiro círculo - com foto da consultora */}
+              <div className="w-12 h-12 relative z-10">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <Image 
+                    src="/consultor-1.png" 
+                    alt="Consultora" 
+                    width={54}
+                    height={54}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="w-12 h-12">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="54"
-                  height="54"
-                  viewBox="0 0 54 54"
-                  fill="none"
-                >
-                  <circle cx="27" cy="27" r="27" fill="white" />
-                </svg>
+              {/* Segundo círculo - com foto do consultor 2 */}
+              <div className="w-12 h-12 relative z-20 -ml-3">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <Image 
+                    src="/consultor-2.png" 
+                    alt="Consultor 2" 
+                    width={54}
+                    height={54}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="w-12 h-12">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="54"
-                  height="54"
-                  viewBox="0 0 54 54"
-                  fill="none"
-                >
-                  <circle cx="27" cy="27" r="27" fill="white" />
-                </svg>
+              {/* Terceiro círculo - com foto do consultor 3 */}
+              <div className="w-12 h-12 relative z-30 -ml-3">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <Image 
+                    src="/consultor-3.png" 
+                    alt="Consultor 3" 
+                    width={54}
+                    height={54}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
