@@ -2,6 +2,12 @@
 
 Um projeto moderno de interface web desenvolvido com Next.js, TypeScript e Tailwind CSS, focado em apresentar informações sobre imóveis de forma elegante e interativa.
 
+## 🌐 Live Demo
+
+🔗 **[https://liva-project.vercel.app/](https://liva-project.vercel.app/)**
+
+Veja o projeto funcionando em produção! A aplicação está hospedada na Vercel com deploy automático.
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Next.js 15** - Framework React para produção
@@ -178,13 +184,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 **Marcus Plech**
 - GitHub: [@marcusplech](https://github.com/marcusplech)
 - LinkedIn: [Marcus Plech](https://linkedin.com/in/marcusplech)
-
-## 🙏 Agradecimentos
-
-- Next.js team pelo excelente framework
-- Tailwind CSS pela facilidade de estilização
-- Comunidade open source pelas ferramentas utilizadas
-
----
-
-⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
